@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Our Friendship Memories 🫶🏻</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="blur-in-start">
+
+  <div id="floating-bg"></div>
+
+  <!-- Page Navigation -->
+  <nav class="page-nav">
+    <a href="index.html"></a>
+    <a href="gallery.html" class="active"></a>
+    <a href="reasons.html"></a>
+    <a href="letter.html"></a>
+  </nav>
+
+  <!-- ================================================================
+       PAGE 2 — INTERACTIVE FRIENDSHIP PHOTO SLIDESHOW
+  ================================================================= -->
+
+  <section id="gallery" class="page">
+
+    <h2 class="gallery-heading">
+      Our Beautiful Memories <span class="heart">🩷</span>
+    </h2>
+
+    <p class="gallery-sub">
+      A collection of memories, laughter and unforgettable moments! ✨
+    </p>
+
+    <div class="slideshow-wrap">
+
+      <!-- Corner Decoration -->
+      <div class="corner-deco">
+        <img src="assets/sparkle1.gif" alt="sparkle decoration">
+      </div>
+
+      <div class="slide-stage">
+
+        <button class="arrow-btn" id="prevBtn" aria-label="previous photo">‹</button>
+
+        <div class="photo-stage" id="photoStage">
+
+          <div class="polaroid" id="polaroid">
+
+            <div class="photo-frame">
+              <!-- Photos are managed through js/gallery.js -->
+              <img id="currentPhoto" src="photos/photo1.jpg" alt="friendship memory one">
+            </div>
+
+          </div>
+
+          <!-- Bottom Left Decoration -->
+          <div class="bottom-left-deco">
+            <img src="assets/sparkle2.gif" alt="sparkle decoration">
+          </div>
+
+        </div>
+
+        <button class="arrow-btn" id="nextBtn" aria-label="next photo">›</button>
+
+      </div>
+
+      <p class="caption" id="currentCaption">
+        Some people make ordinary days special. So glad to have a best friend like you! 🫶🏻
+      </p>
+
+      <div class="dots" id="dots">
+        <button class="dot active" data-index="0" aria-label="photo 1"></button>
+        <button class="dot" data-index="1" aria-label="photo 2"></button>
+        <button class="dot" data-index="2" aria-label="photo 3"></button>
+        <button class="dot" data-index="3" aria-label="photo 4"></button>
+      </div>
+
+      <p class="counter" id="counter">photo 1 of 4</p>
+
+    </div>
+
+    <div class="page-buttons">
+
+      <a href="index.html" class="nav-btn secondary">
+        &lt; back
+      </a>
+
+      <a href="reasons.html" class="nav-btn">
+        Next Surprise! ✨
+      </a>
+
+    </div>
+
+  </section>
+
+  <script src="js/script.js"></script>
+  <script src="js/gallery.js"></script>
+
+</body>
+</html>

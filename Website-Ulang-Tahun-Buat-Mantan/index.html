@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#18181b" />
+    <meta
+      name="description"
+      content="A birthday greeting and a heartfelt letter for Priya."
+    />
+    <meta property="og:title" content="For Priya — Nov 25" />
+    <meta
+      property="og:description"
+      content="Something made especially for your birthday."
+    />
+    <meta property="og:image" content="./assets/eza-profile.png" />
+    <meta property="og:type" content="website" />
+    <title>For Priya — Nov 25</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500;1,700&family=Source+Serif+4:ital,wght@0,350;0,400;0,600;1,350;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="is-locked">
+    <a class="skip-link" href="#main-content">Skip introduction</a>
+
+    <div class="scroll-progress" aria-hidden="true">
+      <span id="scrollProgress"></span>
+    </div>
+
+    <div class="ambient" aria-hidden="true">
+      <span class="ambient__orb ambient__orb--one"></span>
+      <span class="ambient__orb ambient__orb--two"></span>
+      <span class="ambient__grain"></span>
+    </div>
+
+    <section class="intro" id="intro" aria-labelledby="introTitle">
+      <div class="intro__topline">
+        <span>Private message</span>
+        <span>25 · 11</span>
+      </div>
+
+      <div class="intro__layout">
+        <div class="intro__portrait" aria-hidden="true">
+          <span class="portrait-card portrait-card--back"></span>
+          <span class="portrait-card portrait-card--middle"></span>
+          <figure class="portrait-card portrait-card--front">
+            <img
+              src="./assets/eza-profile.png"
+              width="720"
+              height="720"
+              alt=""
+              fetchpriority="high"
+            />
+            <figcaption>for your day</figcaption>
+          </figure>
+          <svg class="intro__scribble" viewBox="0 0 96 78" fill="none">
+            <path
+              d="M7 65C24 11 63 3 86 18C103 29 76 54 55 38C40 27 51 11 65 7"
+            />
+          </svg>
+        </div>
+
+        <div class="intro__copy">
+          <p class="eyebrow">For Priya</p>
+          <h1 id="introTitle">There is something<br />for <em>Priya.</em></h1>
+          <p class="intro__lead">
+            Nothing extravagant, just made slowly and wholeheartedly.
+          </p>
+
+          <div class="intro__actions">
+            <button
+              class="button button--primary"
+              id="openExperience"
+              type="button"
+            >
+              <span>Open now</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </button>
+            <button class="button button--quiet" id="notReady" type="button">
+              Take it slow
+            </button>
+          </div>
+
+          <p class="intro__reassurance" id="reassurance" aria-live="polite"></p>
+          <p class="intro__audio-note">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9 18V5l10-2v13" />
+              <circle cx="6" cy="18" r="3" />
+              <circle cx="16" cy="16" r="3" />
+            </svg>
+            Best opened with sound on
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <header class="site-header" id="siteHeader">
+      <a class="brand" href="#hero" aria-label="Return to the beginning">
+        <span>25.11</span>
+        <span class="brand__divider" aria-hidden="true"></span>
+        <span>for Priya</span>
+      </a>
+
+      <button
+        class="sound-toggle"
+        id="soundToggle"
+        type="button"
+        aria-label="Play music"
+        aria-pressed="false"
+      >
+        <span class="sound-toggle__bars" aria-hidden="true">
+          <i></i><i></i><i></i>
+        </span>
+        <span id="soundLabel">Music</span>
+      </button>
+    </header>
+
+    <main id="main-content" aria-hidden="true" inert>
+      <section class="hero" id="hero" tabindex="-1" aria-labelledby="heroTitle">
+        <div class="hero__index" aria-hidden="true">
+          <span>01</span>
+          <span>04</span>
+        </div>
+
+        <div class="hero__copy reveal">
+          <p class="eyebrow eyebrow--light">Today is about you</p>
+          <h2 id="heroTitle">Happy<br />Birthday, <em>Priya.</em></h2>
+          <p class="hero__date">
+            November twenty-fifth — a day I will always remember.
+          </p>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="hero__halo" aria-hidden="true"></div>
+          <figure class="hero__photo">
+            <img
+              src="./assets/eza-profilee.png"
+              width="720"
+              height="720"
+              alt="Illustrated profile of Eza with pink hair"
+            />
+            <figcaption>
+              <span>Priya</span>
+              <span>25 / 11</span>
+            </figcaption>
+          </figure>
+          <span class="hero__note" aria-hidden="true"
+            >a little note for you</span
+          >
+        </div>
+
+        <a class="scroll-cue" href="#prologue">
+          <span>Start the story</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 5v14M6 13l6 6 6-6" />
+          </svg>
+        </a>
+      </section>
+
+      <section
+        class="prologue section"
+        id="prologue"
+        aria-labelledby="prologueTitle"
+      >
+        <div class="section__number reveal" aria-hidden="true">02</div>
+        <div class="prologue__content">
+          <p class="eyebrow reveal">One day, many good wishes</p>
+          <h2 class="display-title reveal" id="prologueTitle">
+            May life always treat you
+            <em>gently.</em>
+          </h2>
+          <div class="prologue__grid">
+            <p class="prologue__lead reveal">
+              Some people are in our lives briefly, yet leave lessons that last
+              a long time.
+            </p>
+            <p class="prologue__body reveal">
+              Thank you for being part of that journey. For every story, laugh,
+              mistake, truth, and small moment that helped me become a better
+              person.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="portrait-break" aria-label="Portrait and a short message">
+        <div class="portrait-break__marquee" aria-hidden="true">
+          <span>today is yours · today is yours · today is yours ·&nbsp;</span>
+          <span>today is yours · today is yours · today is yours ·&nbsp;</span>
+        </div>
+        <div class="portrait-break__layout">
+          <figure class="portrait-break__photo reveal">
+            <img
+              src="./assets/eza-profile.png"
+              width="720"
+              height="720"
+              loading="lazy"
+              alt="Illustrated portrait of Eza"
+            />
+            <span class="portrait-break__tape" aria-hidden="true"></span>
+          </figure>
+          <blockquote class="reveal">
+            <svg viewBox="0 0 56 42" aria-hidden="true">
+              <path
+                d="M2 42V26C2 8 10 0 27 0v9c-8 1-12 5-13 12h11v21H2Zm29 0V26C31 8 39 0 56 0v9c-8 1-12 5-13 12h11v21H31Z"
+              />
+            </svg>
+            <p>“A woman who gave me so many valuable lessons.”</p>
+            <cite>— from someone who still wishes you well</cite>
+          </blockquote>
+        </div>
+      </section>
+<!-- 
+      <section class="wishes section" aria-labelledby="wishesTitle">
+        <div class="section__heading">
+          <div>
+            <p class="eyebrow reveal">Three things for the new year</p>
+            <h2 class="display-title reveal" id="wishesTitle">
+              More <em>good things.</em>
+            </h2>
+          </div>
+          <p class="section__aside reveal">
+            Not only today—may these wishes stay with you in every step that
+            follows.
+          </p>
+        </div>
+
+        <div class="wishes__grid">
+          <article class="wish-card reveal">
+            <div class="wish-card__top">
+              <span>01</span>
+              <svg viewBox="0 0 32 32" aria-hidden="true">
+                <path
+                  d="M16 27S5 21 5 12.5A6.5 6.5 0 0 1 16 7.8a6.5 6.5 0 0 1 11 4.7C27 21 16 27 16 27Z"
+                />
+              </svg>
+            </div>
+            <h3>Happiness</h3>
+            <p>May your smile always remain, with many new reasons to laugh.</p>
+          </article>
+
+          <article class="wish-card wish-card--accent reveal">
+            <div class="wish-card__top">
+              <span>02</span>
+              <svg viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M16 3v26M3 16h26M7 7l18 18M25 7 7 25" />
+              </svg>
+            </div>
+            <h3>Growth</h3>
+            <p>May the hopes you have carried slowly find their way.</p>
+          </article>
+
+          <article class="wish-card reveal">
+            <div class="wish-card__top">
+              <span>03</span>
+              <svg viewBox="0 0 32 32" aria-hidden="true">
+                <path
+                  d="M16 4c2.5 6.4 5.6 9.5 12 12-6.4 2.5-9.5 5.6-12 12-2.5-6.4-5.6-9.5-12-12 6.4-2.5 9.5-5.6 12-12Z"
+                />
+              </svg>
+            </div>
+            <h3>Good company</h3>
+            <p>
+              May you always meet sincere people and find things that bring
+              peace to your heart.
+            </p>
+          </article>
+        </div>
+      </section> -->
+
+      <section class="letter-section" id="letter" aria-labelledby="letterTitle">
+        <div class="letter-section__intro reveal">
+          <p class="eyebrow eyebrow--light">03 — a letter</p>
+          <h2 id="letterTitle">For Priya,<br /><em>sincerely.</em></h2>
+          <p>
+            When you are ready, read it slowly. There is no need to rush to the
+            final page.
+          </p>
+        </div>
+
+        <article class="letter reveal">
+          <div class="letter__meta">
+            <span>Written for</span>
+            <strong>Priya</strong>
+            <span>25 November · 23.41</span>
+          </div>
+
+          <div class="letter__body">
+            <p class="letter__salutation">Hi, Priya.</p>
+
+            <p>
+              Priya, you have given me so many valuable lessons. From what was
+              wrong and what was right, from little things I may not have
+              noticed before, to the things that ultimately helped me become a
+              better person.
+            </p>
+
+            <p class="letter__highlight">Happy Birthday, Priya.</p>
+
+            <p>
+              I wrote this letter on November 15 at 11:41. Honestly, I do not
+              know whether these flowers will arrive on your birthday. If they
+              arrive late, I am sorry. Still, I hope this letter reaches you and
+              is read with a smile.
+            </p>
+
+            <p>
+              On November 25, you grow one year older. In this new year of your
+              life, may every good thing increase—happiness, health, prosperity,
+              and may the hopes you have kept slowly become real.
+            </p>
+
+            <aside class="letter__pullquote">
+              May your smile always remain, and may life always treat you
+              gently.
+            </aside>
+
+            <p>
+              Thank you for being part of my life and helping me become better.
+              Maybe time has taken us down different paths, but the memories and
+              lessons we shared will always have their own place in my life.
+            </p>
+
+            <p>
+              I always hope you are surrounded by good people, meet good things,
+              and are kept away from anything that could make you sad.
+            </p>
+
+            <p>
+              I am sorry that I can only give a simple gift like this. It may
+              not be much, but I prepared it sincerely. I hope you like it.
+            </p>
+
+            <p>
+              I do not know how far life will carry each of us. But one thing is
+              certain: I will always wish the very best for you.
+            </p>
+
+            <p class="letter__highlight">Happy birthday, Priya.</p>
+
+            <p>Thank you for every story, lesson, and memory we shared.</p>
+
+            <p>
+              Priya, if you ever think that no one has loved you, remember this:
+              my feelings have not changed at all from 2023 until now.
+            </p>
+
+            <p>
+              Maybe many things have changed. Time, circumstances, and our busy
+              lives have changed. But in that regard, I am still the same
+              person.
+            </p>
+
+            <p>
+              So if one day something is wrong, you are sad, tired, or simply
+              need someone to talk to, do not forget that you can find me. My
+              WhatsApp number will never change.
+            </p>
+
+            <p>
+              Oh, and once you have read this, you do not need to message me to
+              say thank you. If the flowers reach you, a little hint in a
+              WhatsApp status is enough.
+            </p>
+
+            <p>
+              If you do not like the flowers, it is okay to let them go. I
+              understand the situation now. They are simply a sign that I still
+              have the same feelings, only in a better form.
+            </p>
+
+            <p>
+              Once again, happy birthday, Priya. May today be the beginning of
+              many happy things waiting ahead.
+            </p>
+          </div>
+
+          <footer class="letter__signature">
+            <span>with all my heart,</span>
+            <strong>Ashish Dubey</strong>
+          </footer>
+
+          <div class="letter__stamp" aria-hidden="true">
+            <span>25</span>
+            <span>NOV</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="closing" aria-labelledby="closingTitle">
+        <div class="closing__index" aria-hidden="true">04</div>
+        <div class="closing__content reveal">
+          <p class="eyebrow eyebrow--light">One final sentence</p>
+          <h2 id="closingTitle">
+            May your days always be full of <em>happiness.</em>
+          </h2>
+          <p>Happy birthday, Priya.</p>
+          <a class="button button--light" href="#hero">
+            <span>Read from the beginning</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 11a8 8 0 1 0-2.3 5.7M20 4v7h-7" />
+            </svg>
+          </a>
+        </div>
+        <div class="closing__date" aria-hidden="true">25 · 11</div>
+      </section>
+    </main>
+
+    <audio id="bgMusic" loop preload="none">
+      <source
+        src="https://mp3tourl.com/audio/1780939741571-eaa46f8b-db73-4d56-b057-bd7b6367f20f.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <noscript>
+      <div class="noscript">
+        Enable JavaScript to open this experience. This letter was made
+        especially for Priya.
+      </div>
+    </noscript>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
