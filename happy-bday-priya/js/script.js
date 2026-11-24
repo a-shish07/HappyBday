@@ -1,25 +1,57 @@
 /* ================================================================
    PAGE-TO-PAGE BLUR TRANSITION — jalan di SEMUA halaman
 ================================================================= */
-(function(){
+
+/* ================================================================
+   PAGE-TO-PAGE BLUR TRANSITION — ALL PAGES
+================================================================= */
+
+(function () {
+  function resetPageTransition() {
+    document.body.classList.remove('blur-out');
+    document.body.classList.remove('blur-in-start');
+  }
+
+  // Normal page loading
   requestAnimationFrame(() => {
-    requestAnimationFrame(() => {
-      document.body.classList.remove('blur-in-start');
-    });
+    requestAnimationFrame(resetPageTransition);
+  });
+
+  // Handles browser Back / Forward navigation
+  window.addEventListener('pageshow', function (event) {
+    resetPageTransition();
+  });
+
+  // Handles navigation between website pages
+  document.body.addEventListener('click', function (e) {
+    const link = e.target.closest('a');
+
+    if (!link) return;
+
+    const href = link.getAttribute('href');
+
+    if (
+      !href ||
+      href.startsWith('#') ||
+      href.startsWith('http') ||
+      link.target === '_blank' ||
+      link.hasAttribute('download')
+    ) return;
+
+    e.preventDefault();
+
+    document.body.classList.add('blur-out');
+
+    if (typeof saveMusicState === 'function') {
+      saveMusicState();
+    }
+
+    setTimeout(() => {
+      window.location.href = href;
+    }, 550);
   });
 })();
 
-document.body.addEventListener('click', function(e){
-  const link = e.target.closest('a');
-  if (!link) return;
-  const href = link.getAttribute('href');
-  if (!href || href.startsWith('#') || href.startsWith('http')) return;
-
-  e.preventDefault();
-  document.body.classList.add('blur-out');
-  if (typeof saveMusicState === 'function') saveMusicState();
-  setTimeout(() => { window.location.href = href; }, 550);
-});
 
 /* ================================================================
    HER LITTLE NOTE — tombol catatan kecil yang bisa diedit
