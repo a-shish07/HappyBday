@@ -261,7 +261,7 @@ You make every ordinary day feel special just by being in it. Your smile, your l
 
 I hope this year brings you every single thing you've been hoping for, and so much more. I promise to be right beside you for all of it — the big moments and the tiny, quiet ones too.
 
-Thank you for being exactly who you are. I love you more than words can say.
+Thank you for being exactly who you are.You means to me more than words can say.
 
 Happy birthday, my girl. Here's to you. 🎂`;
 
